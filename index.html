@@ -3,8 +3,8 @@
 <head>
     <!-- meta -->
     <meta charset="UTF-8">
-    <meta name="description" content="K-Yosukeのポートフォリオサイト">
-    <meta name="author" content="K-Yosuke">
+    <meta name="description" content="K,Yosukeのポートフォリオサイト">
+    <meta name="author" content="K,Yosuke">
 
     <!-- CommonStyleSheet -->
     <link rel="stylesheet" href="./common/css/bootstrap.min.css" type="text/css">
@@ -12,8 +12,9 @@
     <!-- OriginalStyleSheet -->
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 
-    <title>Try!</title>
+    <title>K,Yosuke's Portfolio</title>
 </head>
+
 <body>
 <nav class="nav-bar navbar-inverse">
     <div class="container">
@@ -36,17 +37,19 @@
         </div>
     </div>
 </nav>
+
 <header class="jumbotron" style="background-image: url('./common/img/TopBanner.jpg'); background-size: cover;">
     <div class="container">
         <h1 class="header-title">K,Yosuke's Portfolio</h1>
     </div>
 </header>
+
 <div class="container">
     <div class="row">
         <section id="profile" class="col-md-12">
             <h2><i class="glyphicon glyphicon-user glyphicon-with-section"></i>Profile</h2>
             <div class="col-md-4">
-                <img src="img/avator.jpg" class="img-circle img-responsive center-block">
+                <img src="img/avatar.jpg" class="img-circle img-responsive center-block">
             </div>
             <div class="col-md-8">
                 <p>1991年生まれ 千葉県在住 都内中規模SIer勤務</p>
@@ -117,32 +120,13 @@
         <section id="products" class="col-md-12">
             <h2><i class="glyphicon glyphicon-floppy-disk glyphicon-with-section"></i>Products</h2>
             <div class="col-md-12">
-                <ul class="chew-row chew-row--col-4 chew-row--card-min-200 chew-row--card-max-400 chew-row--gutter">
+                <ul class="chew-row chew-row--col-4 chew-row--card-min-200 chew-row--card-max-200 chew-row--gutter">
                     <li class="chew-cell">
                         <div class="chew-card">
-                            <img src="http://placehold.jp/200x200.png" class="img-circle img-responsive center-block">
-                            <p class="text-center">text</p>
+                            <img id="myPortfolio" src="img/myPortfolio-cap.jpg"
+                                 class="img-rounded img-responsive center-block">
                         </div>
                     </li>
-                    <li class="chew-cell">
-                        <div class="chew-card">
-                            <img src="http://placehold.jp/200x200.png" class="img-circle img-responsive center-block">
-                            <p class="text-center">text</p>
-                        </div>
-                    </li>
-                    <li class="chew-cell">
-                        <div class="chew-card">
-                            <img src="http://placehold.jp/200x200.png" class="img-circle img-responsive center-block">
-                            <p class="text-center">text</p>
-                        </div>
-                    </li>
-                    <li class="chew-cell">
-                        <div class="chew-card">
-                            <img src="http://placehold.jp/200x200.png" class="img-circle img-responsive center-block">
-                            <p class="text-center">text</p>
-                        </div>
-                    </li>
-
 
                     <!-- Dummy Cell -->
                     <li class="chew-cell chew-cell--ghost"></li>
@@ -154,6 +138,31 @@
         </section>
     </div>
 </div>
+
+<div id="myPortfolio-info" class="container-fluid products-information">
+    <div class="container">
+        <h3 class="text-center">MyPortfolio Site</h3>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="col-md-4">
+                <p class="text-center">URL</p>
+                <p class="text-center">GitHub</p>
+                <p class="text-center">UseTech</p>
+            </div>
+            <div class="col-md-8">
+                <p><a href="https://k-yosuke.github.io/MyPortfolio/" target="_blank">https://k-yosuke.github.io/MyPortfolio/</a>
+                </p>
+                <p><a href="https://github.com/K-Yosuke/MyPortfolio" target="_blank">https://github.com/K-Yosuke/MyPortfolio</a>
+                </p>
+                <p>
+                    BootStrap, JQuery, GitHub
+                </p>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
 <footer class="container-fluid">
     <div class="container">
         <section id="contact">
@@ -173,9 +182,11 @@
     </div>
 </footer>
 
-<!-- Script -->
+<!-- CommonScript -->
 <script src="./common/js/jquery-3.1.0.min.js"></script>
 <script src="./common/js/bootstrap.min.js"></script>
+<!-- OriginalScript -->
+<script src="./js/products.js"></script>
 
 </body>
 </html>

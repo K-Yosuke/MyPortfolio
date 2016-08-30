@@ -1,7 +1,7 @@
 /* BootStrap Wrap */
 
 h1.header-title {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     color: floralwhite;
 }
 
@@ -14,10 +14,20 @@ i.glyphicon-with-section {
     max-width: 80%;
 }
 
-footer.container-fluid {
-    background-color: lightgrey;
-}
-
 .img-max-height {
     max-height: 200px;
+}
+
+#products {
+    margin-bottom: 20px;
+}
+
+.products-information {
+    margin-bottom: 20px;
+    background-color: lightgoldenrodyellow;
+}
+
+footer {
+    color: white;
+    background-color: darkblue;
 }
